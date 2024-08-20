@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>How to Write JS</title>
+
+   <!-- way:2: can be placed  in the  head  section of an HTML page.syntax: <script></script> -->
+
+   <script>
+      function myJS_head() {
+         document.getElementById('demo2').innerHTML = "Head: Hello JavaScript ! ";
+      }
+   </script>
+</head>
+
+<body>
+   <!-- JavaScript code is inserted between <script> and </script> tags.  -->
+   <!-- can be placed  in the  body  section of an HTML page. syntax: <script></script>  -->
+
+   <h1>The way of writing JavaScript:</h1>
+
+   <p id="demo"></p>
+   <p id="demo1"></p>
+   <p id="demo2"></p>
+   
+
+   <p id="external_file0"></p>
+   <p id="external_file1"></p>
+   <p id="external_file2"></p>
+ 
+
+
+   <button type="button" onclick="myJS_head()">Head</button>
+   <button type="button" onclick="myJS_body()">Body-3</button>
+
+   <button type="button" onclick="Script()">External File 1</button>
+   <button type="button" onclick="myScript()">External File 2</button>
+  
+
+   <!-- way:1: Ideal: JavaScript file add on the bottom of the body part, Not ideal: JavaScript place anywhere in the body part,and this is not ideal -->
+   <!-- Placing scripts at the bottom of the tag:body element improves the display speed, because script interpretation slows down the display. -->
+   
+   
+   <script>
+      document.getElementById('demo').innerHTML = "Body-1:Hello JavaScript !";
+   </script>
+
+
+
+   <script>
+      document.getElementById('demo1').innerHTML = "Body-2: It's most popular programming language !";
+   </script>
+
+
+   <script>
+      function myJS_body() {
+         document.getElementById('demo2').innerHTML = "Body-3: Hello JavaScript !";
+      }
+   </script>
+
+
+   <!--way:3: add external file, External scripts cannot contain <script> tags. -->
+   <!-- 
+   External JavaScript Advantages:
+    1. It separates HTML and  js code
+    2. It makes HTML and JavaScript easier to read and maintain
+    3. Cached JavaScript files, can speed up page loads 
+    -->
+
+    
+   <script src="script.js"></script>
+   <script src="myScript.js"></script>
+
+</body>
+
+</html>

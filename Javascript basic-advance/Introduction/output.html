@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display with innerHTML</title>
+</head>
+
+<body>
+
+    <!-- way-1: 
+     Changing the innerHTML property of an HTML element is a common way to display data in HTML. -->
+    <h4 id="innerHTML2">Method 1:document.innerHTML()</h4>
+  
+    <!--way-2: 
+    document.write method in JavaScript is used to write text directly to an HTML document.Used  for testing purpose  -->
+
+    <h4>Method 2:document.write( )</h4>
+    <button type="button" onclick="document.write(200+200)">Write</button><br><br>
+
+    <!--way-3: 
+    alert box to display data: Used  for show alert about something-->
+    <h4>Method 3:window.alert( )</h4>
+
+    <!--way-4: 
+    For debugging purposes, you can call the console.log() method in the browser to display data.: -->
+    <h4>Method 4:console.log( )</h4>
+
+    <!--way-5: 
+    1. JavaScript does not have any print object or print methods
+    2. window.print() method in the browser to print the content of the current window,
+    -->
+
+
+    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Aspernatur sint alias temporibus maxime sunt animi dolorem accusantium dicta quas nisi 
+        voluptatum corrupti quisquam dolore soluta nesciunt adipisci, 
+        fugiat voluptate ea aut velit vitae quidem omnis necessitatibus iure. 
+        Impedit at accusamus, dolorem eveniet sint delectus veritatis voluptatum? 
+        Accusantium impedit numquam hic!
+    </p>
+     <button type="button" onclick="window.print()">Print</button><br>
+     <!-- <button type="button" onclick="print()">Print</button> -->
+
+    <script src="/Output/output.js"></script>
+</body>
+
+</html>
