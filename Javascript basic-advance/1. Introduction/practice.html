@@ -4,66 +4,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- 1. JavaScript: write in html head  -->
-  <script>
-    function content(){
-    let con=document.getElementById("demo_content");
-    con.innerHTML="Change content: Learn javaScript";
-}
-
-
-  </script>
+  <title>JavaScript Examples</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- Change :  content of html tag  -->
-  <h1>Change : content of html tag</h1>
-  <p id="demo_content">Original content: Hello JavaScript</p>
-  <button onclick="content()">Change-Content</button>
+  <div id="content">
+    <h1>JavaScript Examples</h1>
 
-  <!-- change : attribute of html tag  -->
-  <h1> Change: attriube of html tag</h1>
-  <button onclick="ON()">ON</button>
-  <img id="demo_img" src="/Javascript basic-advance/00. image/off.gif" alt="off.gif">
+    <!-- Example 1: Changing Content -->
+    <p id="demo1">This is a paragraph.</p>
+    <button onclick="changeContent()">Change Content</button>
 
-  <button onclick="OFF()">OFF</button>
+    <!-- Example 2: Handling Events -->
+    <button id="eventButton">Click Me!</button>
 
-  <!-- change : attribute style of html tag  -->
-  <h1> Change: attriube of html tag</h1>
-  <p id="demo_style" style="color: aqua; font-size: larger; font-weight: 800;">Lorem ipsum dolor sit amet consectetur
-    adipisicing.</p>
-  <button onclick="attribute()">Chnage-Attribute</button> <br><br><br>
+    <!-- Example 3: Form Validation -->
+    <form name="myForm" onsubmit="return validateForm()">
+      Name: <input type="text" name="name">
+      <input type="submit" value="Submit">
+    </form>
 
+    <!-- Example 4: Manipulating Arrays -->
+    <p>Array Example: <span id="arrayOutput"></span></p>
 
-  <!-- change : show and hide  content of html tag  -->
-  <h1> change : show and hide content of html tag </h1>
+    <!-- Example 5: Basic DOM Manipulation -->
+    <div id="newElementContainer"></div>
+    <button onclick="createNewElement()">Create New Element</button>
 
-  <button onclick="hide()">Hide</button>
-  <p id="demo_sw">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, minima.</p>
-  <button onclick="show()">Show</button>
+    <!-- Example 6: Control Structures -->
+    <p id="timeGreeting"></p>
 
+    <!-- Example 7: Functions -->
+    <p id="functionOutput"></p>
 
-  <!-- 2. JavaScript: write in html body  -->
-  <script>
-    function hide() {
-      let att = document.getElementById("demo_sw");
-      att.style.display = "none";
-    }
+    <!-- Example 8: Working with Objects -->
+    <p id="objectOutput"></p>
 
-    function show() {
-      let att = document.getElementById("demo_sw");
-      att.style.display = "block";
-    }
-  </script>
+    <!-- Example 9: Interacting with APIs -->
+    <p>API Data: <span id="apiData"></span></p>
 
+    <!-- Example 10: Timers -->
+    <p id="timerMessage"></p>
 
+    <!-- Example 11: Handling Errors -->
+    <button onclick="triggerError()">Trigger Error</button>
 
+    <!-- Example 12: Local Storage -->
+    <p>Stored Username: <span id="storedUsername"></span></p>
 
-  <!-- 3. JavaScript: externa file link  -->
-  <script src="/Javascript basic-advance/1. Introduction/practice.js"></script>
+    <!-- Example 13: Creating Animations -->
+    <div id="box" style="position: absolute; background-color: red; width: 100px; height: 100px;"></div>
+    <button onclick="startAnimation()">Start Animation</button>
 
+    <!-- Example 14: Using Promises -->
+    <p id="promiseOutput"></p>
+
+    <!-- Example 15: Event Propagation -->
+    <div id="parent" style="padding: 20px; background-color: lightgrey;">
+      Parent
+      <div id="child" style="padding: 20px; background-color: lightblue;">Child</div>
+    </div>
+
+    <!-- Example 16: Working with Dates and Times -->
+    <p id="currentDate"></p>
+
+    <!-- Example 17: Regular Expressions -->
+    <p>Is email valid? <span id="regexOutput"></span></p>
+
+    <!-- Example 18: JSON Parsing -->
+    <p id="jsonOutput"></p>
+
+    <!-- Example 19: Creating Classes -->
+    <p id="classOutput"></p>
+
+    <!-- Example 20: Responsive Web Design -->
+    <p id="responsiveMessage">Resize the window to see changes!</p>
+
+    <!-- Load the JavaScript file -->
+  </div>
+  <script src="/1. Introduction/practice.js"></script>
 </body>
 
 </html>

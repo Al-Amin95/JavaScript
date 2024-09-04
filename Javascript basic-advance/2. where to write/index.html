@@ -1,70 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <!-- 1. JavaScript in Head -->
     <script>
         function content() {
             let con = document.getElementById("demo_content");
-            con.innerHTML = "Change content: Learn JavaScript";
-        }
-        function attribute() {
-            let att = document.getElementById("demo_style");
-            att.style = "color: red; font-size: 30px; font-weight: 800";
+            con.innerHTML = "JavaScript code can write in head";
         }
     </script>
 </head>
 
 <body>
     <!-- Change : content of HTML tag -->
-    <h1>Change : content of HTML tag</h1>
-    <p id="demo_content">Original content: Hello JavaScript</p>
-    <button onclick="content()">Change-Content</button>
+    <p id="demo_content">Change content in head: Learn JavaScript</p>
+    <p id="demo">Change content in body : Learn JavaScript</p>
+
+    <button type="button" onclick="content()">Click-1</button>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Change from inline"'>Click-2
+    </button> <!-- 2. inline JavaScript Code  -->
 
     <!-- Change: attribute of HTML tag -->
     <h1>Change: attribute of HTML tag</h1>
     <button onclick="ON()">ON</button>
-    <img id="demo_img" src="/Javascript basic-advance/00. image/off.gif" alt="off.gif">
+    <img id="demo_img" src="/00. image/off.gif" alt="off.gif">
     <button onclick="OFF()">OFF</button>
-
-    <!-- Change: attribute style of HTML tag -->
-    <h1>Change: attribute style of HTML tag</h1>
-    <p id="demo_style" style="color: aqua; font-size: larger; font-weight: 800;">Lorem ipsum dolor sit amet consectetur
-        adipisicing.</p>
-    <button onclick="attribute()">Change-Attribute</button><br><br><br>
-
+    <!-- 3. JavaScript in Body -->
+    <script>
+        function ON() {
+            let att = document.getElementById("demo_img");
+            att.src = "/00. image/on.gif";
+        }
+        function OFF() {
+            let att = document.getElementById("demo_img");
+            att.src = "/00. image/off.gif";
+        }
+    </script>
     <!-- Change: show and hide content of HTML tag -->
     <h1>Change: show and hide content of HTML tag</h1>
     <button onclick="hide()">Hide</button>
     <p id="demo_sw">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, minima.</p>
     <button onclick="show()">Show</button>
-
-    <!-- 2. JavaScript in Body -->
-    <script>
-        function ON() {
-            let att = document.getElementById("demo_img");
-            att.src = "/Javascript basic-advance/00. image/on.gif";
-        }
-        function OFF() {
-            let att = document.getElementById("demo_img");
-            att.src = "/Javascript basic-advance/00. image/off.gif";
-        }
-    </script>
-
     <!-- 4. JavaScript: External file link -->
-    <script src="/Javascript basic-advance/2. where to write/index.js"></script>
-
-    <!-- 5. JavaScript from External URL -->
-    <!-- <script src="https://example.com/scripts/external-script.js"></script> -->
-
-
-    <script src="myScript1.js"></script>
-    <script src="myScript2.js"></script>
-
+    <script src="index.js"></script>
 </body>
-
 </html>
