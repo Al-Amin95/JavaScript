@@ -1,49 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- 1. JavaScript in Head -->
+    <title>JavaScript Types Example</title>
     <script>
-        function content() {
-            let con = document.getElementById("demo_content");
-            con.innerHTML = "JavaScript code can write in head";
-        }
+        // JavaScript in the head section
+        console.log('JavaScript from the head section');
     </script>
+
+
+    <script src="/2. where to write/index.js"></script> <!-- External JavaScript file linked in the head -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- External URL JavaScript (e.g., jQuery) -->
 </head>
 
 <body>
-    <!-- Change : content of HTML tag -->
-    <p id="demo_content">Change content in head: Learn JavaScript</p>
-    <p id="demo">Change content in body : Learn JavaScript</p>
+    <h1>JavaScript Display in HTML</h1>
+    <p id="demo">This text will change from JavaScript in the body.</p>
 
-    <button type="button" onclick="content()">Click-1</button>
-    <button type="button" onclick='document.getElementById("demo").innerHTML = "Change from inline"'>Click-2
-    </button> <!-- 2. inline JavaScript Code  -->
-
-    <!-- Change: attribute of HTML tag -->
-    <h1>Change: attribute of HTML tag</h1>
-    <button onclick="ON()">ON</button>
-    <img id="demo_img" src="/00. image/off.gif" alt="off.gif">
-    <button onclick="OFF()">OFF</button>
-    <!-- 3. JavaScript in Body -->
+    <!-- JavaScript in the body section -->
     <script>
-        function ON() {
-            let att = document.getElementById("demo_img");
-            att.src = "/00. image/on.gif";
-        }
-        function OFF() {
-            let att = document.getElementById("demo_img");
-            att.src = "/00. image/off.gif";
-        }
+        document.getElementById("demo").innerHTML = "JavaScript changed this text.";  // Writing into an HTML element using innerHTML
+        console.log('JavaScript from the body section');  // Displaying output using console.log
+        alert('This is a JavaScript alert from the body section');  // Displaying an alert box
+        document.write("This is text written using document.write.");   // Using document.write
     </script>
-    <!-- Change: show and hide content of HTML tag -->
-    <h1>Change: show and hide content of HTML tag</h1>
-    <button onclick="hide()">Hide</button>
-    <p id="demo_sw">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, minima.</p>
-    <button onclick="show()">Show</button>
-    <!-- 4. JavaScript: External file link -->
-    <script src="index.js"></script>
+
+    <script src="/2. where to write/index.js"></script> <!-- External JavaScript file linked in the body -->
+    <!-- Another script using the external jQuery URL -->
+    <script>
+        $(document).ready(function () {
+            console.log('JavaScript using jQuery from an external URL');
+        });
+    </script>
+
 </body>
+
 </html>
