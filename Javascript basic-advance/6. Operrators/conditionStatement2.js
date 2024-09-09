@@ -24,21 +24,12 @@ function calculation(score) {
 }
 
 function calculateGrade() {
-    // Get the user's input
-    let userInput = document.getElementById("score").value;
-
-    // Convert the input to a number
-    let score = Number(userInput);
-
-    // Validate the score input
-    if (isNaN(score) || score < 0 || score > 100) {
+    let userInput = document.getElementById("score").value;     // Get the user's input
+    let score = Number(userInput);   // Convert the input to a number
+    if (isNaN(score) || score < 0 || score > 100) { // Validate the score input
         document.getElementById("result").innerHTML = "Please enter a valid score between 0 and 100.";
         return;
     }
-
-    // Calculate the grade
-    let grade = calculation(score);
-
-    // Display the grade
-    document.getElementById("result").innerHTML = "Your grade is: " + grade;
+    let grade = calculation(score);    // Calculate the grade
+    document.getElementById("result").innerHTML = "Your grade is: " + grade;    // Display the grade
 }
