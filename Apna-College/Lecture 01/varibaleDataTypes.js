@@ -4,11 +4,12 @@ console.log('Hello JavaScript');// with double qoutes
 console.log("Mohammad Al-Amin"); // with double qoutes
 console.log('Mohammad Al-Amin'); // with double qoutes
 
-/*Variables: Variables are Containers for Storing Data: can be declared in 4 ways
-1. Automatically, 2. Using var, 3.Using let, 4. Using const
+/*
+Variables: Variables are Containers for Storing Data: can be declared in 4 ways
+1. Automatically,  2. Using var,  3.Using let,  4. Using const 
 */
  
-// 1.declare Variables with automatically: Global Scope (can be re-decalre and update)
+//1. declare Variables with automatically: Global Scope (can be re-decalre and update)
 userName ="Mohammad Al-Amin";
 userId=101;
 userAddress="Dhaka, bangladesh";
