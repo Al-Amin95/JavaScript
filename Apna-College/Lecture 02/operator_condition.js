@@ -97,7 +97,6 @@ let number=120;
 let result= (number>=100)?"Number is greater than or equal 100: "+number: "Number is less than  or equal 100: "+number;
 console.log("Result: ",result,"\n\n")
 
-
 /*
 Conditional Statements: It’s controlled the flow of code based on conditions.
 1.	if: Executes a block of code if the specified condition is true.
