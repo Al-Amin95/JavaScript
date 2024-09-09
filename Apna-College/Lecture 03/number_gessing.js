@@ -23,3 +23,4 @@ while (player1 !== player2 && chance > 0) {
 if (player1 === player2) {
     console.log("Win! You entered the number: " + player2);
 }
+

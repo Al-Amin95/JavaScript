@@ -16,7 +16,6 @@
 //     console.log("Imran");
 // }console.log("\n\n");
 
-
 // //while loop:
 // let i = 1;
 // while (i <= 10) {

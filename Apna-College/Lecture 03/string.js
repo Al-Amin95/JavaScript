@@ -5,7 +5,6 @@ console.log("String-length: ",str1.length);
 console.log("String-index: ","str-index-0:",str1[0], ",str-index-1:",str1[1],",str-index-2:",str1[2]);
 console.log("\n\n");
 
-
 //String: template literals concatenate  between two string
 let product={
     name:"Walton W131",
